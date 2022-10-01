@@ -60,7 +60,7 @@ CONFIGURATIONS
 class CustomConfig(Config):
 
     # Give the configuration a recognizable name
-    NAME = "civata"
+    NAME = "forklift"
 
     # Train on 1 GPU and 8 images per GPU. We can put multiple images on each
     # GPU because the images are small. Batch size is 8 (GPUs * images/GPU).
@@ -83,10 +83,10 @@ class CustomConfig(Config):
     # TRAIN_ROIS_PER_IMAGE = 32
 
     # Use a small epoch since the data is simple
-    STEPS_PER_EPOCH = 500
+    STEPS_PER_EPOCH = 15
 
     # use small validation steps since the epoch is small
-    VALIDATION_STEPS = 5
+    VALIDATION_STEPS = 2
 
     DETECTION_MIN_CONFIDENCE = 0.9
 
