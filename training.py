@@ -63,7 +63,7 @@ class CustomConfig(Config):
     NAME = "forklift"
 
     # Train on 1 GPU and 8 images per GPU. We can put multiple images on each
-    # GPU because the images are small. Batch size is 8 (GPUs * images/GPU).
+    # GPU because the images are small. Batch size is 4 (GPUs * images/GPU).
     GPU_COUNT = 1
     IMAGES_PER_GPU = 4
 
